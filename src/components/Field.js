@@ -7,7 +7,7 @@ export default class Field extends Component {
             <div className="ui field">
             <label>
                 <LanguageContext.Consumer>
-                    {(value)=>{return value==='english'? 'Name' : 'Naam'}}
+                    {({language})=>{return language==='english'? 'Name' : 'Naam'}}
                 </LanguageContext.Consumer>
                 </label>
                 <input />

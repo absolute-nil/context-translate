@@ -10,7 +10,7 @@ export default class Button extends Component {
                 return(
                  <button className={`ui button ${color}`}>
                     <LanguageContext.Consumer>
-                        {(value)=>{return value==='english'? 'Submit' : 'Prastut'}}
+                        {({language})=>{return language==='english'? 'Submit' : 'Prastut'}}
                     </LanguageContext.Consumer>
                 </button>
                 )}}
